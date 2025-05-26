@@ -40,7 +40,7 @@ const LeadForm = () => {
             const data = await res.json();
             alert(data.message);
         } catch (err) {
-            alert('Error submitting form');
+             console.log(err)
         }
     };
     return (
@@ -87,7 +87,7 @@ const LeadForm = () => {
                                 style={{ padding: '10px', fontSize: '16px' }}
                             ></textarea>
 
-                            <button type="submit " style={{ padding: '10px', fontSize: '16px', cursor: 'pointer',backgroundColor:"slategray",color:"white",  }}>
+                            <button type="submit" style={{ padding: '10px', fontSize: '16px', cursor: 'pointer',backgroundColor:"slategray",color:"white",  }}>
                                 Submit
                             </button>
                         </form>
